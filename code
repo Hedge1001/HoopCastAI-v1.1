@@ -30,6 +30,14 @@ files = {
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 5173,
+  },
+}); { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
   plugins: [react()]
 });''',
 "index.html": r'''<!doctype html>
